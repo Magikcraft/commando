@@ -1,0 +1,73 @@
+{
+	"name": "@magikcraft/commando",
+	"version": "0.0.0",
+	"description": "Add commands to Minecraft",
+	"homepage": "https://www.magikcraft.io",
+	"author": {
+		"name": "Josh Wulf",
+		"email": "josh@magikcraft.io",
+		"url": "https://github.com/jwulf"
+	},
+	"keywords": [
+		"minecraft",
+		"scriptcraft",
+		"magikcraft"
+	],
+	"devDependencies": {
+		"@magikcraft/op-all": "^1.0.0",
+		"@scriptcraft/types": "^1.0.1",
+		"coveralls": "^3.0.2",
+		"eslint": "^5.9.0",
+		"eslint-config-prettier": "^3.3.0",
+		"eslint-config-xo": "^0.25.0",
+		"eslint-plugin-prettier": "^3.0.0",
+		"husky": "^1.3.1",
+		"jest": "^23.5.0",
+		"lint-staged": "^8.1.5",
+		"prettier": "^1.16.4"
+	},
+	"engines": {
+		"npm": ">= 4.0.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{ts,json,css,md}": [
+			"prettier --write",
+			"git add"
+		],
+		"*.js": [
+			"eslint --fix",
+			"git add"
+		],
+		"*.json": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"prettier"
+		],
+		"env": {
+			"jest": true,
+			"node": true
+		},
+		"rules": {
+			"prettier/prettier": "error"
+		},
+		"plugins": [
+			"prettier"
+		]
+	},
+	"scripts": {},
+	"repository": "Magikcraft/commando",
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"license": "Apache-2.0"
+}
