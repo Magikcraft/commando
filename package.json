@@ -1,6 +1,6 @@
 {
 	"name": "@magikcraft/commando",
-	"version": "0.0.0",
+	"version": "0.0.2",
 	"description": "Add commands to Minecraft",
 	"homepage": "https://www.magikcraft.io",
 	"author": {
@@ -46,22 +46,6 @@
 		"*.json": [
 			"prettier --write",
 			"git add"
-		]
-	},
-	"eslintConfig": {
-		"extends": [
-			"xo",
-			"prettier"
-		],
-		"env": {
-			"jest": true,
-			"node": true
-		},
-		"rules": {
-			"prettier/prettier": "error"
-		},
-		"plugins": [
-			"prettier"
 		]
 	},
 	"scripts": {},
