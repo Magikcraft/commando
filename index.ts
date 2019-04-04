@@ -1,8 +1,8 @@
-const commando = require('scriptcraft-plugins/../../plugins/commando/commando')
+const commando = require('/_server_/scriptcraft/plugins/commando/commando.js')
 	.commando as CommandoFn
 export default commando
 
 type CommandoFn = (
 	command: string,
-	callback: (player: BukkitPlayer, args: string[]) => void
+	callback: (args: string[], player: BukkitPlayer) => void
 ) => void
