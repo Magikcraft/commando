@@ -1,6 +1,6 @@
 {
 	"name": "@magikcraft/commando",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Add commands to Minecraft",
 	"homepage": "https://www.magikcraft.io",
 	"author": {
@@ -15,7 +15,7 @@
 	],
 	"devDependencies": {
 		"@magikcraft/op-all": "^1.0.0",
-		"@scriptcraft/types": "^1.0.1",
+		"@scriptcraft/types": "^1.1.16",
 		"coveralls": "^3.0.2",
 		"eslint": "^5.9.0",
 		"eslint-config-prettier": "^3.3.0",

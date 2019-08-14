@@ -4,5 +4,5 @@ export default commando
 
 type CommandoFn = (
 	command: string,
-	callback: (args: string[], player: BukkitPlayer) => void
+	callback: (args: string[], player: Player) => void
 ) => void
